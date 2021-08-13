@@ -6,9 +6,9 @@ function signup() {
     $('#signup').hide();
     $('#login').hide();
     $('#loading').show();
-    $("#username").attr('disabled','disabled');
-    $("#password").attr('disabled','disabled');
-    $("#email").attr('disabled','disabled');
+    // $("#username").attr('disabled','disabled');
+    // $("#password").attr('disabled','disabled');
+    // $("#email").attr('disabled','disabled');
     let settings = {
         "url": "https://wpcs.xyz/signup",
         "method": "POST",

@@ -1,0 +1,42 @@
+.center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.input-field {
+    position: relative;
+    width: 250px;
+    height: 44px;
+    line-height: 44px;
+}
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #bbbbbb;
+    transition: 0.2s all;
+    cursor: text;
+}
+input {
+    background-color: #2C2F33;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #23272a;
+    box-shadow: none;
+    color: #7289da;
+}
+input:invalid {
+    outline: 0;
+}
+input:focus, input:valid {
+    border-color: #7289da;
+}
+input:focus ~ label, input:valid ~ label {
+    font-size: 14px;
+    top: -24px;
+    color: #7289da;
+}

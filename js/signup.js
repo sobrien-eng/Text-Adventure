@@ -22,7 +22,7 @@ function signup() {
 
     $.ajax(settings).done(function (response) {
         if (response === "OK") {
-            sessionStorage.setItem('prompt-successful-signup', true);
+            sessionStorage.setItem('successful-signup', 1);
             location.replace("https://wpcs.xyz/login");
         }
     });

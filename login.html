@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/bioler_plate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="login-control" class="center">
+    <center><h3 id="notice"></h3></center>
+    <div id="login-container">
+        <h3 id="header">Login</h3>
+        <div class="input-field">
+            <input type="text" id="username" required/>
+            <label id="usernamel" for="username">Username</label>
+        </div>
+        <br>
+        <div class="input-field">
+            <input type="password" id="password" required/>
+            <label id="passwordl" for="password">Password</label>
+        </div>
+        <br>
+    </div>
+
+    <center>
+        <div id="loading" class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </center>
+    <a id="login" onclick="login()" class="button">Login</a>
+    <a id="signup" class="button" href="https://wpcs.xyz.com/signup">Signup</a>
+</div>
+</body>
+</html>

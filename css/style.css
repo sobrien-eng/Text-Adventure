@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 html, body {
     font-family: 'Montserrat', sans-serif;
     background-color: #2C2F33;
     color: #FFFFFF;
 }
 
-a.button {
+a.lnkbutton {
     display: inline-block;
     padding: 0.35em 1.2em;
     border: 0.1em solid #FFFFFF;
@@ -21,13 +21,13 @@ a.button {
     transition: all 0.2s;
 }
 
-a.button:hover {
+a.lnkbutton:hover {
     color: #000000;
     background-color: #FFFFFF;
 }
 
 @media all and (max-width: 30em) {
-    a.button {
+    a.lnkbutton {
         display: block;
         margin: 0.4em auto;
     }

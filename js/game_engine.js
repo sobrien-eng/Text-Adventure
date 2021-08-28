@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
     initialize();
 };
 
@@ -19,7 +19,7 @@ function hideLoading() {
     $('#loading').hide();
 }
 
-function handleEvent(id){
+function handleEvent(id) {
     setupEvent($(id).data('ne'));
 }
 
@@ -48,7 +48,10 @@ function initialize() { //50 for testing
 }
 
 function showButtonsReleventToOptions(numOptions) {
-    switch(numOptions){
+    $('#option_two').show();
+    $('#option_three').show();
+    $('#option_four').show();
+    switch (numOptions) {
         case 1:
             $('#option_two').hide();
             $('#option_three').hide();
@@ -64,7 +67,7 @@ function showButtonsReleventToOptions(numOptions) {
     }
 }
 
-function setupEvent(eid){
+function setupEvent(eid) {
     showLoading();
     var settings = {
         "url": "https://wpcs.xyz/api/events?id=" + eid,

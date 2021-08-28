@@ -7,32 +7,59 @@
     <link href="css/game_page.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Game</title>
+    <script src="js/game_engine.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- containers for text to show and continers for options
-        class = lnkbutton for button css style
-    -->
-    <center>
-        <div id="prompt">jfeoi</div>
-    </center>
-    <br>
-    <br>
-    <br>
-
-    <div>
+<!-- containers for text to show and continers for options
+    class = lnkbutton for button css style
+-->
+<div class="center">
+    <div id="story_setup">
         <center>
-            <a id="option_one" class="lnkbutton"></a>
+            <h3 id="game_name"></h3>
         </center>
+        <br>
         <center>
-            <a id="option_two" class="lnkbutton"></a>
+            <p id="description"></p>
         </center>
+        <br>
         <center>
-            <a id="option_three" class="lnkbutton"></a>
+            <a id="start" onclick="start_event()" class="lnkbutton">Start Game</a>
         </center>
-        <center>
-            <a id="option_four" class="lnkbutton"></a>
-        </center>
-        
     </div>
+    <div id="game">
+        <center>
+            <div id="prompt"></div>
+        </center>
+        <br>
+        <br>
+
+        <div>
+            <center>
+                <a id="option_one" onclick="handleEvent('#option_one')" class="lnkbutton"></a>
+            </center>
+            <center>
+                <a id="option_two" onclick="handleEvent('#option_two')" class="lnkbutton"></a>
+            </center>
+            <center>
+                <a id="option_three" onclick="handleEvent('#option_three')" class="lnkbutton"></a>
+            </center>
+            <center>
+                <a id="option_four" onclick="handleEvent('#option_four')" class="lnkbutton"></a>
+            </center>
+        </div>
+    </div>
+    <center>
+        <br>
+        <div id="loading" class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </center>
+</div>
 </body>
 </html>
